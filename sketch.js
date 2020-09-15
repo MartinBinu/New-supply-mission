@@ -35,12 +35,12 @@ function setup() {
 		friction: 0.4
 	}
 	
-	packageBody = Bodies.rectangle(width/2,200,70,70,package_option);
+	packageBody = Bodies.rectangle(width/2,200,50,50,package_option);
 	World.add(world, packageBody);
 
-	box1 = new Box(350,550);
-	box2 = new Midbox (450,585);
-	box3 = new Box (550,550);
+	box1 = new Box(300,550,30,170);
+	box2 = new Box (400,590,170,30);
+	box3 = new Box (500,550,30,170);
     ground = new Ground(width/2,650,800,70);
 
 	Engine.run(engine);
